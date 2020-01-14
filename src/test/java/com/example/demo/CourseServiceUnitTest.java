@@ -1,6 +1,7 @@
 package com.example.demo;
 
 import com.example.demo.modal.Course;
+import com.example.demo.modal.dto.CourseDto;
 import com.example.demo.repository.CourseRepository;
 import com.example.demo.service.CourseService;
 import org.junit.Test;
@@ -28,7 +29,7 @@ public class CourseServiceUnitTest {
 
         given(courseRepository.findAllClasses()).willReturn(courseList);
 
-        List<Course> result = courseService.findAllCourses();
+        List<CourseDto> result = courseService.findAllCourses();
 
         assertTrue(result.isEmpty());
     }

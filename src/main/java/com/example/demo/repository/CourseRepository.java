@@ -2,6 +2,7 @@ package com.example.demo.repository;
 
 import com.example.demo.modal.Course;
 import com.example.demo.modal.Instructor;
+import com.example.demo.modal.dto.CourseDto;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -37,6 +38,7 @@ public class CourseRepository {
     public List<Course> findAllClasses(){
         //链接数据库
         //返回数据库的信息
+
         return  courses;
     }
 
